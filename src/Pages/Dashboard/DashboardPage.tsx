@@ -1,4 +1,4 @@
-import { Box, Chart, Heading } from "grommet";
+import { Box, Chart} from "grommet";
 
 const DashboardPage = () => {
     return (

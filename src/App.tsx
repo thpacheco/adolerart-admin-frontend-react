@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, grommet, Grommet } from "grommet";
+import React from "react";
+import { BrowserRouter, Link, Outlet, Route, Router, Routes } from "react-router-dom";
+import DashboardPage from "./Pages/Dashboard/DashboardPage";
+import Login from "./Pages/Login/Login";
+import PrivateRoute from "./Pages/Router/privateRouter";
+import Routers from "./Pages/Router/Routes";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> Adoleta Admin.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routers></Routers>
   );
 }
 
 export default App;
+
